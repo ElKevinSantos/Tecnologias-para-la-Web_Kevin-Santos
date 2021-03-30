@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4 - Formularios</title>
+</head>
+<body>
+    <header>
+        <nav></nav>
+    </header>
+
+    <main>
+        <!--
+            action = url a donde se mandan los datos del formulario
+            GET    = Los datos se mandan en URL
+            POST   = Se mandan con la página (body)
+
+            POST
+                universidad=IPN = value
+                escuela=UPIIZ = value
+                ramaconocimiento=2 =value
+                grado=3
+                estatus=2
+                promedio=8
+                semestre=4
+
+            GET
+                ?universidad=IPN&escuela=ESCOM&ramaconocimiento=2&grado=3&estatus=2&promedio=8&semestre=4 
+        -->
+
+        <form action="registro.php" method="GET">
+           
+            <table align="center">
+                <tr>
+                    <td><label for="universidad">Equipo de transaccion:</label></td>
+                    <td><input type="text" name="universidad" id="universidad" value=""> </td>
+                </tr>
+                <tr>
+                    <td><label for="escuela">Equipo receptor:</label></td>
+                    <td><input type="text" name="escuela" id="escuela" value=""></td>
+                </tr>
+                <tr>
+                    <td><label for="ramaconocimiento">Posicion</label></td>
+                    <td>
+                        <select name="ramaconocimiento" id="ramaconocimiento">
+                            <option value="1">Defensa</option>
+                            <option value="2">Medio</option>
+                            <option value="3">Delantero</option>
+                            <option value="4">Portero</option>
+
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="grado">Posicionamiento preferido:</label></td>
+                    <td>
+                        <select name="grado" id="grado">
+                            <option value="1">Lateral Derecho</option>
+                            <option value="2">Lateral Izquierdo</option>
+                            <option value="3">Central</option>
+                            <option value="4">Central Derecho</option>
+                            <option value="5">Central Izquierdo</option>
+                        </select>
+                        <label>
+                            <input type="radio" value="1" name="estatus" id="estatus"> Diestro
+                        </label>
+                        <label>
+                            <input type="radio" value="2" name="estatus" id ="estatus"> Zurdo
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="promedio">Número</label></td>
+                    <td>
+                        <input type="number" name="promedio" id="promedio" min="1" max="10">
+                        <label>
+                            <input type="number" name="semestre" id="semestre" min="1"> Categoria
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Edad:</label></td>
+                    <td>
+                        <label>
+                            <input type="number" name="experiencia" id="experiencia" min="0"> años
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Facebook</label></td>
+                    <td><input type="url" name="sitioweb" id="sitioweb" value="http://Facebook/(Tu_Perfil).com"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Transferir J."></td>
+                    <td><input type="reset" value="Limpiar campos"></td>
+            </table>
+         </form>
+
+    </main>
+
+    <footer>
+    </footer>
+</body>
+</html>
