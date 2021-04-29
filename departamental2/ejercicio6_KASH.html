@@ -292,7 +292,7 @@
                      <div class="row">
                          <div class="col-md-3">
                             <div class="form-group">
-                             <button type="button" class="btn btn-block btn-success" >X!</button>
+                             <button type="button" class="btn btn-block btn-success" onclick="calcularFactorial();" >X!</button>
                              </div>
                          </div>
 
@@ -311,13 +311,13 @@
                      
                      <div class="col-md-2">
                         <div class="form-group">
-                            <button type="button" class="btn btn-block btn-success">%</button>
+                            <button type="button" class="btn btn-block btn-success" onclick="calcularPorcentaje();">%</button>
                         </div>
                     </div>
 
                     <div class="col-md-3">
                         <div class="form-group">
-                            <button type="button" class="btn btn-block btn-success">AC</button>
+                            <button type="button" class="btn btn-block btn-success" onclick="limpiaDisplay()">AC</button>
                         </div>
                     </div>
                 </div>
@@ -326,32 +326,32 @@
                 <div class="row">
                     <div class="col-md-3">
                        <div class="form-group">
-                        <button type="button" class="btn btn-block btn-success"  >ln</button>
+                        <button type="button" class="btn btn-block btn-success" onclick="calcularLogaritmoNatural();" >ln</button>
                         </div>
                     </div>
 
                     <div class="col-md-2">
                        <div class="form-group">
-                           <button type="button" class="btn btn-block btn-default" onclick="clickDigito(7);">7</button>
+                           <button type="button" class="btn btn-block btn-default" onclick="presionaDigito(7);">7</button>
                        </div>
                     </div>
 
                     <div class="col-md-2">
                        <div class="form-group">
-                           <button type="button" class="btn btn-block btn-default" onclick="clickDigito(8);">8</button>
+                           <button type="button" class="btn btn-block btn-default" onclick="presionaDigito(8);">8</button>
                        </div>
                     </div>
                 
                 
                 <div class="col-md-2">
                    <div class="form-group">
-                       <button type="button" class="btn btn-block btn-default" onclick="clickDigito(8);">9</button>
+                       <button type="button" class="btn btn-block btn-default" onclick="presionaDigito(9);">9</button>
                    </div>
                </div>
 
                <div class="col-md-3">
                    <div class="form-group">
-                       <button type="button" class="btn btn-block btn-success">-</button>
+                       <button type="button" class="btn btn-block btn-success" onclick="presionaOperador('*');">*</button>
                    </div>
                </div>
            </div>
@@ -360,32 +360,32 @@
             <div class="row">
                 <div class="col-md-3">
                    <div class="form-group">
-                    <button type="button" class="btn btn-block btn-success" >log</button>
+                    <button type="button" class="btn btn-block btn-success" onclick="calcularLogaritmo();">log</button>
                     </div>
                 </div>
 
                 <div class="col-md-2">
                    <div class="form-group">
-                       <button type="button" class="btn btn-block btn-default" onclick="clickDigito(4);">4</button>
+                       <button type="button" class="btn btn-block btn-default" onclick="presionaDigito(4);">4</button>
                    </div>
                 </div>
 
                 <div class="col-md-2">
                    <div class="form-group">
-                       <button type="button" class="btn btn-block btn-default" onclick="clickDigito(5);">5</button>
+                       <button type="button" class="btn btn-block btn-default" onclick="presionaDigito(5);">5</button>
                    </div>
                 </div>
             
             
             <div class="col-md-2">
                <div class="form-group">
-                   <button type="button" class="btn btn-block btn-default" onclick="clickDigito(6);">6</button>
+                   <button type="button" class="btn btn-block btn-default" onclick="presionaDigito(6);">6</button>
                </div>
            </div>
 
            <div class="col-md-3">
                <div class="form-group">
-                   <button type="button" class="btn btn-block btn-success">/</button>
+                   <button type="button" class="btn btn-block btn-success" onclick="presionaOperador('/')">/</button>
                </div>
            </div>
        </div>
@@ -395,32 +395,32 @@
         <div class="row">
             <div class="col-md-3">
                <div class="form-group">
-                <button type="button" class="btn btn-block btn-success" >raiz</button>
+                <button type="button" class="btn btn-block btn-success" onclick="calculaRaiz();" >raiz</button>
                 </div>
             </div>
 
             <div class="col-md-2">
                <div class="form-group">
-                   <button type="button" class="btn btn-block btn-default" onclick="clickDigito(1);">1</button>
+                   <button type="button" class="btn btn-block btn-default" onclick="presionaDigito(1);">1</button>
                </div>
             </div>
 
             <div class="col-md-2">
                <div class="form-group">
-                   <button type="button" class="btn btn-block btn-default" onclick="clickDigito(2);">2</button>
+                   <button type="button" class="btn btn-block btn-default" onclick="presionaDigito(2);">2</button>
                </div>
             </div>
         
         
         <div class="col-md-2">
            <div class="form-group">
-               <button type="button" class="btn btn-block btn-default" onclick="clickDigito(3);">3</button>
+               <button type="button" class="btn btn-block btn-default" onclick="presionaDigito(3);">3</button>
            </div>
        </div>
 
        <div class="col-md-3">
            <div class="form-group">
-               <button type="button" class="btn btn-block btn-success">-</button>
+               <button type="button" class="btn btn-block btn-success" onclick="presionaOperador('-');">-</button>
            </div>
        </div>
    </div>
@@ -430,32 +430,32 @@
    <div class="row">
     <div class="col-md-3">
        <div class="form-group">
-        <button type="button" class="btn btn-block btn-success" >xy</button>
+        <button type="button" class="btn btn-block btn-success" onclick="calcularExponente();">xy</button>
         </div>
     </div>
 
     <div class="col-md-2">
        <div class="form-group">
-           <button type="button" class="btn btn-block btn-default" onclick="clickDigito(0);">0</button>
+           <button type="button" class="btn btn-block btn-default" onclick="presionaDigito(0);">0</button>
        </div>
     </div>
 
     <div class="col-md-2">
        <div class="form-group">
-           <button type="button" class="btn btn-block btn-default">.</button>
+           <button type="button" class="btn btn-block btn-default" onclick="presionaPunto();">.</button>
        </div>
     </div>
 
 
 <div class="col-md-2">
    <div class="form-group">
-       <button type="button" class="btn btn-block btn-primary">=</button>
+       <button type="button" class="btn btn-block btn-primary" onclick="presionaIgual();">=</button>
    </div>
 </div>
 
 <div class="col-md-3">
    <div class="form-group">
-       <button type="button" class="btn btn-block btn-success">+</button>
+       <button type="button" class="btn btn-block btn-success" onclick="presionaOperador('+');">+</button>
    </div>
 </div>
 </div>
