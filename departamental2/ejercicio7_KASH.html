@@ -290,12 +290,12 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="number" class="form-control" id="input_longitud_1" value="0" onclick="cambiaValor();" onchange="cambiaValor();" onkeypress="cambiaValor();">
+                                    <input type="number" class="form-control" id="input_longitud_1" value="0"  onchange="cambiaValor();" >
                                 </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="number" class="form-control" id="input_longitud_2" value="0" onclick="cambiaValor();" onchange="cambiaValor();" onkeypress="cambiaValor();">
+                                        <input type="number" class="form-control" id="input_longitud_2" value="0"  onchange="cambiaValor();" >
                         
                         </div>
                     </div>       
@@ -303,7 +303,7 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                        <select class="form-control" id="select_longitud_1" onchange="cambiaValor();" onclick="cambiaValor();">
+                        <select class="form-control" id="select_longitud_1" onchange="cambiaValor();" >
                                             <option value="kilometro">Kilómetro</option>
                                             <option value="metro">Metro</option>
                                             <option value="centimetro">Centímetro</option>
@@ -338,22 +338,26 @@
                                 
                                 
                             </div>
-                        <div class="alert alert-success alert-dismissible">
+                        <div class="alert alert-success alert-dismissible" id="formula">
                                 <!--<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>-->
                                 <h5><i class="icon fas fa-check"></i> Formula</h5>
-                                Multiplica el valor de la longitud por 100
+                                <input type="text" class="form-control" id="formula1" value="Hola que hace" " onchange="cambiaValor();" >
                               </div>
                     </div>
+
+
+
+
                     <div class="tab-pane fade" id="custom-tabs-four-temperatura" role="tabpanel" aria-labelledby="custom-tabs-four-profile-tab">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="number" class="form-control" id="input_temperatura_1" value="0">
+                                    <input type="number" class="form-control" id="input_temperatura_1" value="0" onchange="cambiaTemperatura();">
                                 </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="number" class="form-control" id="input_temperatura_2" value="0">
+                                        <input type="number" class="form-control" id="input_temperatura_2" value="0" onchange="cambiaTemperatura();">
                         
                         </div>
                     </div>       
@@ -361,45 +365,43 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                        <select class="form-control" id="select_temperatura_1">
-                          <option>option 1</option>
-                          <option>option 2</option>
-                          <option>option 3</option>
-                          <option>option 4</option>
-                          <option>option 5</option>
+                        <select class="form-control" id="select_temperatura_1" onchange="cambiaTemperatura();">
+                          <option value="c">Grado Celsius</option>
+                          <option value="f">Grado Fahrenheit</option>
+                          <option value="k">Kelvin</option>
                         </select>
                                 </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <select class="form-control" id="select_temperatura_2">
-                                          <option>option 1</option>
-                                          <option>option 2</option>
-                                          <option>option 3</option>
-                                          <option>option 4</option>
-                                          <option>option 5</option>
+                                        <select class="form-control" id="select_temperatura_2" onchange="cambiaTemperatura();">
+                          <option value="c">Grado Celsius</option>
+                          <option value="f">Grado Fahrenheit</option>
+                          <option value="k">Kelvin</option>
                                         </select>                        
                         </div>
                     </div>
                                 
                                 
                             </div>
-                        <div class="alert alert-success alert-dismissible">
+                        <div class="alert alert-success alert-dismissible" id="formula">
                                 <!--<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>-->
                                 <h5><i class="icon fas fa-check"></i> Formula</h5>
-                                Multiplica el valor de la longitud por 100
+                                <input type="text" class="form-control" id="formula2" value="Hola que hace"  onchange="cambiaTemperatura();" >
                               </div>
                     </div>
+
+
                     <div class="tab-pane fade" id="custom-tabs-four-masa" role="tabpanel" aria-labelledby="custom-tabs-four-messages-tab">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="number" class="form-control" id="input_masa_1" value="0">
+                                    <input type="number" class="form-control" id="input_masa_1" value="0" onchange="cambiaMasa();">
                                 </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="number" class="form-control" id="input_masa_2" value="0">
+                                        <input type="number" class="form-control" id="input_masa_2" value="0" onchange="cambiaMasa();">
                         
                         </div>
                     </div>       
@@ -407,23 +409,33 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                        <select class="form-control" id="select_masa_1">
-                          <option>option 1</option>
-                          <option>option 2</option>
-                          <option>option 3</option>
-                          <option>option 4</option>
-                          <option>option 5</option>
+                        <select class="form-control" id="select_masa_1" onchange="cambiaMasa();">
+                          <option value="ton">Tonelada</option>
+                          <option value="kil">Kilogramo</option>
+                          <option value="gra">Gramo</option>
+                          <option value="mil">Miligramo</option>
+                          <option value="mic">Microgramo</option>
+                          <option value="tonLar">Tonelada larga</option>
+                          <option value="tonCor">Tonelada corta</option>
+                          <option value="sto">Stone</option>
+                          <option value="lib">Libra</option>
+                          <option value="onz">Onza</option>
                         </select>
                                 </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <select class="form-control" id="select_masa_2">
-                                          <option>option 1</option>
-                                          <option>option 2</option>
-                                          <option>option 3</option>
-                                          <option>option 4</option>
-                                          <option>option 5</option>
+                                        <select class="form-control" id="select_masa_2" onchange="cambiaMasa();">
+                          <option value="ton">Tonelada</option>
+                          <option value="kil">Kilogramo</option>
+                          <option value="gra">Gramo</option>
+                          <option value="mil">Miligramo</option>
+                          <option value="mic">Microgramo</option>
+                          <option value="tonLar">Tonelada larga</option>
+                          <option value="tonCor">Tonelada corta</option>
+                          <option value="sto">Stone</option>
+                          <option value="lib">Libra</option>
+                          <option value="onz">Onza</option>
                                         </select>                        
                         </div>
                     </div>
@@ -433,7 +445,7 @@
                         <div class="alert alert-success alert-dismissible">
                                 <!--<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>-->
                                 <h5><i class="icon fas fa-check"></i> Formula</h5>
-                                Multiplica el valor de la longitud por 100
+                                <input type="text" class="form-control" id="formula3" value="Hola que hace"  onchange="cambiaMasa();" >
                               </div>
                     </div>
                     <!--
